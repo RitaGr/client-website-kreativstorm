@@ -1,83 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Our first website</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="logo">Header Logo</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Our first website</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="./index.html">
+        <img src="./images/logo.png" alt="logo">
+      </a>
       <div class="header-links">
-        <a href="">Link</a>
-        <a href="">Link</a>
+        <a href="./index.html">Home</a>
+        <a href="">Destinations</a>
+        <a href="">Services</a>
+        <a href="">About us</a>
         <a href="./pages/contact/index.html">Contact</a>
       </div>
-    </header>
-    <main>
-      <article class="section first-section">
+    </div>
+  </header>
+  <main>
+    <article class="section first-section">
+      <div>
+        <div class="title">Welcome!</div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id
+          facilisis ex. In aliquam nisl sit amet mauris venenatis maximus. Sed
+          nec orci vitae diam condimentum maximus et a enim.
+        </p>
+        <button class="btn btn-blue">Sign Up</button>
+      </div>
+      <div class="img-contanier">
+        <img src="images/landing-image.jpg" alt="" height="150px" width="300px">
+      </div>
+    </article>
+    <article class="section second-section">
+        <div class="subtitle">Check our destinations</div>
+        <div class="illustration-container">
+          <div class="illustartion-block">
+            <img src="./images/paris.jpg" alt="Paris">
+            <div class="illustration-caption">Paris</div>
+          </div>
+          <div class="illustartion-block">
+            <img src="./images/rome.jpg" alt="Rome">
+            <div class="illustration-caption">Rome</div>
+          </div>
+          <div class="illustartion-block">
+            <img src="./images/london.png" alt="London">
+            <div class="illustration-caption">London</div>
+          </div>
+          <div class="illustartion-block">
+            <img src="./images/athens.jpeg" alt="Athens">
+            <div class="illustration-caption">Athens</div>
+          </div>
+        </div>
+    </article>
+    <article class="section third-section">
+      <div class="quote-container">
+        <div class="quote">
+          We&nbsp;live in&nbsp;a&nbsp;wonderful world that is&nbsp;full of&nbsp;beauty, charm and adventure. There is&nbsp;no&nbsp;end to&nbsp;the adventures we
+can have if&nbsp;only we&nbsp;seek them with our eyes open.
+        </div>
+        <div class="quote-author">Jawaharial Nehru</div>
+      </div>
+    </article>
+    <article class="section fourth-section">
+      <div class="action-container">
         <div>
-          <div class="title">This website is awesome</div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id
-            facilisis ex. In aliquam nisl sit amet mauris venenatis maximus. Sed
-            nec orci vitae diam condimentum maximus et a enim.
-          </p>
-          <button class="btn btn-blue">Sign Up</button>
+          <div class="description">Call to&nbsp;action</div>
+          <div class="secondary-text">Sign up&nbsp;to&nbsp;send&nbsp;us a&nbsp;request</div>
         </div>
-        <div class="img-contanier">
-          <img alt="placeholder" height="150px" width="300px" />
+        <div>
+          <button class="btn btn-white">Sign&nbsp;Up</button>
         </div>
-      </article>
-      <article class="section second-section">
-        <div class="second-section-container">
-          <div class="subtitle">Some random text</div>
-          <div class="illustration-container">
-            <div class="illustartion-block">
-              <div class="illustration"></div>
-              <div class="illustration-caption">Loren ipsum</div>
-            </div>
-            <div class="illustartion-block">
-              <div class="illustration"></div>
-              <div class="illustration-caption">Loren ipsum</div>
-            </div>
-            <div class="illustartion-block">
-              <div class="illustration"></div>
-              <div class="illustration-caption">Loren ipsum</div>
-            </div>
-            <div class="illustartion-block">
-              <div class="illustration"></div>
-              <div class="illustration-caption">Loren ipsum</div>
-            </div>
-          </div>
-        </div>
-      </article>
-      <article class="section third-section">
-        <div class="quote-container">
-          <div class="quote">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id
-            facilisis ex. In aliquam nisl sit amet mauris venenatis maximus. Sed
-            nec orci vitae diam condimentum maximus et a enim.
-          </div>
-          <div class="quote-author">-Thor</div>
-        </div>
-      </article>
-      <article class="section fourth-section">
-        <div class="action-container">
-          <div>
-            <div class="description">Call to action</div>
-            <div>Sign up for</div>
-          </div>
-          <div>
-            <button class="btn btn-white">Sign Up</button>
-          </div>
-        </div>
-      </article>
-    </main>
-    <footer>
-      <div>Copyrigth &copy;</div>
-    </footer>
-  </body>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <div>Copyrigth &copy;</div>
+  </footer>
+</body>
+
 </html>
