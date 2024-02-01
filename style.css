@@ -14,6 +14,7 @@ header {
 
 header a {
     color: #e5e7eb;
+    text-decoration: none;
 }
 
 header a:visited {
@@ -37,6 +38,7 @@ header a:visited {
     gap: 20px;
     flex-wrap: wrap;
     padding-left: 10px;
+    list-style-type: none;
 }
 
 main {
@@ -104,6 +106,7 @@ article {
 .img-contanier {
     width: 500px;
     height: 150px;
+    padding-left: 20px;
 }
 
 .illustration-container {
@@ -171,9 +174,22 @@ footer {
     justify-content: center;
 }
 
+.menu {
+    display: none;
+}
+
+.menu-icon {
+    display: none
+}
+
+
 @media screen and (max-width: 670px) {
     .section {
         flex-direction: column;
+    }
+
+    .img-contanier {
+        padding-left: 0;
     }
 
     .illustration-container {
@@ -184,5 +200,28 @@ footer {
     
     .btn {
         margin-bottom: 20px;
+    }
+
+    .header-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        flex-basis: 100%;
+        text-align: right;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu:checked ~ .header-links {
+        display: flex;
     }
 }
