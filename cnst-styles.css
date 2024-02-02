@@ -37,14 +37,7 @@ header a:visited {
   justify-content: space-between;
   list-style-type: none;
 }
-/* Mobile */
-@media all and (max-width: 580px) {
-  .header-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-}
+
 .header-links a {
   text-decoration: none;
 }
