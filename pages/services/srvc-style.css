@@ -1,10 +1,25 @@
 .banner {
     background-color: #1f2937;
-    width: 100%;
+    width: 100% ;
     height: 150px;
     display: flex;
     align-items: flex-end;
 }
 h1 {
     color: #e5e7eb;
+}
+.provided-services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    max-width: 960px;
+}
+.provided-services img{
+    height: 250px;
+    width: 450px;
+    border-radius: 10px;
+}
+.provided-services img:hover{
+    border: 3px solid var(--primary-button-color);
+    border-radius: 10px;
 }

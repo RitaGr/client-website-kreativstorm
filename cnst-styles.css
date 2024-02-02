@@ -1,3 +1,6 @@
+:root{
+  --primary-button-color: #3882f6;
+}
 * {
   box-sizing: border-box;
   margin: 0;
