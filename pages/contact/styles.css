@@ -1,11 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 body {
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -16,43 +9,13 @@ header {
 header a:visited {
   color: #e5e7eb;
 }
-.header_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px;
-  color: #e5e7eb;
-  padding: 10px 50px;
-}
-/* Mobile */
-@media all and (max-width: 450px) {
-  .header_container {
-    font-size: 12px;
-  }
-}
-.header_container img {
-  border-radius: 5px;
-}
 .header-links {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
-}
-/* Mobile */
-@media all and (max-width: 580px) {
-  .header-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-.header-links a {
-  text-decoration: none;
-}
-.header-links a:hover {
-  text-decoration: underline;
 }
 main {
   display: flex;
@@ -69,6 +32,7 @@ main {
 }
 h1 {
   color: #e5e7eb;
+  max-width: 960px;
 }
 /* Mobile */
 @media all and (max-width: 450px) {
@@ -207,10 +171,30 @@ h3 {
 .call-center-phone {
   font-size: 36px;
 }
-footer {
-  background-color: #1f2937;
-  color: #e5e7eb;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
+.menu,
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 670px) {
+  .header-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    flex-basis: 100%;
+    text-align: right;
+  }
+  .header-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .menu-icon {
+    display: block;
+  }
+
+  .menu:checked ~ .header-links {
+    display: flex;
+  }
 }

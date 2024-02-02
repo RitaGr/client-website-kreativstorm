@@ -1,21 +1,24 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
+:root{
+  --primary-button-color: #3882f6;
 }
-body{
-    font-family: "Roboto", sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
 }
 header {
-    background-color: #1f2937;
+  background-color: #1f2937;
 }
 header a {
     color: #e5e7eb;
     text-decoration: none;
 }
 header a:visited {
-    color: #e5e7eb;
+  color: #e5e7eb;
 }
 .header-container {
     display: flex;
@@ -62,14 +65,14 @@ header a:visited {
     text-decoration: none;
 } */
 .header-links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 footer {
-    background-color: #1f2937;
-    color: #e5e7eb;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
+  background-color: #1f2937;
+  color: #e5e7eb;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 670px) {
