@@ -68,6 +68,7 @@ article {
 
 .first-section-container {
     display: flex;
+    align-items: center;
     max-width: 800px;
     margin: 0 auto;
 }
