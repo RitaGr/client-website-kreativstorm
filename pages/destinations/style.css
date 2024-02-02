@@ -122,16 +122,16 @@ main {
 }
 
 .london {
-  background-image: url("/images/london-dest.jpg");
+  background-image: url("../../images/london-dest.jpg");
 }
 .paris {
-  background-image: url("/images/paris-dest.jpg");
+  background-image: url("../../images/paris-dest.jpg");
 }
 .athens {
-  background-image: url("/images/athens-dest.jpg");
+  background-image: url("../../images/athens-dest.jpg");
 }
 .rome {
-  background-image: url("/images/rome-dest.jpg");
+  background-image: url("../../images/rome-dest.jpg");
 }
 
 .img-container::before {
