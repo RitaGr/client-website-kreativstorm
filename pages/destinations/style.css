@@ -143,7 +143,7 @@ main {
   left: 0;
   filter: blur(2px);
   z-index: -1;
-  background-image: url("/images/paris-dest.jpg");
+  background-image: url("../../images/rome-dest.jpg");
   border-radius: 10px;
   margin: 0 auto;
 }
