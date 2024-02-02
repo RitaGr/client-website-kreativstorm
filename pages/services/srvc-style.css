@@ -5,12 +5,45 @@
     display: flex;
     align-items: flex-end;
 }
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+}
 h1 {
     color: #e5e7eb;
-    font-size: 48px;
 }
+/* Mobile */
+@media all and (max-width: 450px) {
+    h1 {
+      font-size: 24px;
+      padding: 15px 30px;
+    }
+  }
+  /* Tablet */
+  @media all and (min-width: 451px) and (max-width: 1024px) {
+    h1 {
+      font-size: 34px;
+      padding: 20px 40px;
+    }
+  }
+  /* Web */
+  @media all and (min-width: 1025px) {
+    h1 {
+      font-size: 48px;
+      padding: 30px 50px;
+    }
+  }
 main{
     width: 100%;
+}
+.content{
+    padding: 30px 50px;
+}
+.content h3{
+    font-size: 36px;
+}
+.content p{
+    font-size: 18px;
 }
 .provided-services{
     display: grid;
@@ -21,17 +54,19 @@ main{
     gap: 0.75rem;
     padding: 0 50px;
     margin: 0 auto;
+    overflow: auto;
 }
 .provided-services img{
     max-height: 250px;
     max-width: 450px;
     border-radius: 10px;
+    background-size: cover;
 }
 .service-container{
     padding: 20px;
 }
 .service-container:hover{
-    border: 3px solid var(--primary-button-color);
+    border: 1px solid var(--primary-button-color);
     border-radius: 10px;
 }
 .service-name{
@@ -39,4 +74,21 @@ main{
 }
 .description{
     font-size: 18px;
+}
+
+.btn {
+    width: fit-content;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #e5e7eb;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: #3882f6;
+    color: #e5e7eb;
 }
