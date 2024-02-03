@@ -185,10 +185,13 @@ footer {
   justify-content: center;
 }
 
+.row {
+    display: flex;
+    gap: 1em;
+  }
+
 @media screen and (max-width: 780px) {
   .illustration-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -214,26 +217,21 @@ footer {
   .section {
     flex-direction: column;
   }
+}
 
+@media screen and (max-width: 550px) {
   .illustration-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    display: flex;
+    gap: 1em;
+  }
+
+  .row {
+    flex-direction: column;
   }
 }
 
 
 @media screen and (max-width: 450px) {
-  .illustration-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-
   .subtitle {
     text-align: center;
   }

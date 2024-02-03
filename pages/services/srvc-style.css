@@ -39,21 +39,17 @@ h1 {
       font-size: 34px;
       padding: 20px 40px;
     }
-    .provided-services .section-line{
-        display: flex;
-        flex-direction: column;
-        padding: 20px 40px;
-    }
     .provided-services{
         display: flex;
         flex-direction: row;
     }
-    .service-container{
-        max-width: 450px !important;
+    .service-container h4 {
+        margin-bottom: 10px;
     }
-    .provided-services img{
-        max-width: 450px !important;
-        overflow: auto;
+
+    .service-container img{
+        width: 100%;
+        aspect-ratio: 1;
     }
   }
   /* Web */
@@ -61,6 +57,11 @@ h1 {
     h1 {
       font-size: 48px;
       padding: 30px 50px;
+    }
+
+    .service-container img{
+        width: 100%;
+        aspect-ratio: 1;
     }
   }
 main{
@@ -93,15 +94,17 @@ main .provided-services{
     flex-direction: row;
 }
 .provided-services img{
-    max-height: 250px;
-    max-width: 450px;
     border-radius: 10px;
     background-size: cover;
     padding-bottom: 10px;
+    width: 100%;
+    aspect-ratio: 1;
 }
 .service-container{
     padding: 20px;
-    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .service-container:hover{
     border: 2px solid var(--primary-button-color);
