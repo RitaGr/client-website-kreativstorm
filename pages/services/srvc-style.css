@@ -18,12 +18,20 @@ h1 {
       font-size: 24px;
       padding: 15px 30px;
     }
+    .provided-services .section-line{
+        display: flex;
+        flex-direction: column;
+    }
   }
   /* Tablet */
   @media all and (min-width: 451px) and (max-width: 1024px) {
     h1 {
       font-size: 34px;
       padding: 20px 40px;
+    }
+    .provided-services .section-line{
+        display: flex;
+        flex-direction: column;
     }
   }
   /* Web */
@@ -46,15 +54,18 @@ main{
     font-size: 18px;
 }
 .provided-services{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     max-width: 960px;
     place-items: center;
     gap: 0.75rem;
     padding: 0 50px;
     margin: 0 auto;
-    overflow: auto;
+    width : 80%;
+}
+.section-line{
+    display: flex;
+    flex-direction: row;
 }
 .provided-services img{
     max-height: 250px;
@@ -91,4 +102,8 @@ main{
 .btn-blue {
     background-color: #3882f6;
     color: #e5e7eb;
+}
+.btn-align{
+    display: flex;
+    flex-direction: row-reverse;
 }
