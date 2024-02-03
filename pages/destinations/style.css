@@ -29,13 +29,18 @@ main {
 
 .grid {
   width: 80%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+}
+
+.row {
+  display: flex;
+  gap: 0.75em;
 }
 
 .img-container {
@@ -116,53 +121,27 @@ main {
 }
 
 @media screen and (max-width: 1032px) {
+  .row {
+    flex-direction: column;
+  }
+
   .img-container a {
     width: 80px;
     height: 30px;
-    font-size: calc(var(--primary-header-link-font) - 4px);
-  }
-
-  .img-container div {
-    font-size: calc(var(--primary-header-logo-font) - 4px);
   }
 }
 
 @media screen and (max-width: 865px) {
-  .grid {
-    gap: 20px;
-  }
-
   .img-container a {
     width: 80px;
     height: 30px;
-    font-size: calc(var(--primary-header-link-font) - 4px);
-  }
-
-  .img-container div {
-    font-size: calc(var(--primary-header-logo-font) - 8px);
   }
 }
 
 @media screen and (max-width: 760px) {
-  .grid {
-    grid-template-columns: repeat(1, 0.8fr);
-    place-items: center;
-  }
-
   .img-container a {
     width: 100px;
     height: 40px;
-    font-size: var(--primary-header-link-font);
-  }
-
-  .img-container div {
-    font-size: var(--primary-header-logo-font);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .img-container div {
-    font-size: calc(var(--primary-header-link-font) - 5px);
   }
 }
 
@@ -184,7 +163,6 @@ main {
   }
 
   .img-container div {
-    font-size: calc(var(--primary-header-logo-font) - 12px);
     flex-direction: column-reverse;
     gap: 4px;
   }
