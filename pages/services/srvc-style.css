@@ -128,7 +128,7 @@ main .provided-services{
 }
 
 .btn-blue {
-    background-color: #3882f6;
+    background-color: var(--primary-button-color);
     color: #e5e7eb;
 }
 .btn-align{
