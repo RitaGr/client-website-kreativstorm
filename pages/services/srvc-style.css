@@ -96,7 +96,7 @@ main .provided-services{
     max-height: 250px;
     max-width: 450px;
     border-radius: 10px;
-    background-size: cover;
+    object-fit: cover;
     padding-bottom: 10px;
 }
 .service-container{
