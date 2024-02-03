@@ -95,7 +95,7 @@ main .provided-services{
 }
 .provided-services img{
     border-radius: 10px;
-    background-size: cover;
+    object-fit: cover;
     padding-bottom: 10px;
     width: 100%;
     aspect-ratio: 1;
