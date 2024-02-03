@@ -10,7 +10,7 @@
   font-style: italic;
 }
 
-:root{
+:root {
   --primary-button-color: #3882f6;
   --primary-background-color: #1f2937;
 }
@@ -27,56 +27,38 @@ header {
   background-color: #1f2937;
 }
 header a {
-    color: #e5e7eb;
-    text-decoration: none;
+  color: #e5e7eb;
+  text-decoration: none;
 }
 header a:visited {
   color: #e5e7eb;
 }
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-    color: #e5e7eb;
-    padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #e5e7eb;
+  padding: 10px 50px;
 }
-/* Mobile */
-/* @media all and (max-width: 450px) {
-    .header_container {
-      font-size: 12px;
-    }
-} */
 .header-container img {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 .header-links {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    /* justify-content: space-between; */
-    list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style-type: none;
 }
 
 .menu {
-    display: none;
+  display: none;
 }
 
 .menu-icon {
-    display: none
+  display: none;
 }
 
-/* Mobile */
-/* @media all and (max-width: 580px) {
-    .header-links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-}
-} */
-/* .header-links a {
-    text-decoration: none;
-} */
 .header-links a:hover {
   text-decoration: underline;
 }
@@ -89,26 +71,26 @@ footer {
 }
 
 @media screen and (max-width: 670px) {
-    .header-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 0;
-        margin-right: 0;
-    }
+  .header-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-    .header-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        flex-basis: 100%;
-        text-align: right;
-    }
+  .header-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    flex-basis: 100%;
+    text-align: right;
+  }
 
-    .menu-icon {
-        display: block;
-    }
+  .menu-icon {
+    display: block;
+  }
 
-    .menu:checked ~ .header-links {
-        display: flex;
-    }
+  .menu:checked ~ .header-links {
+    display: flex;
+  }
 }
