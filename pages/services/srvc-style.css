@@ -72,6 +72,7 @@ main .provided-services{
 }
 .content{
     padding: 30px 50px;
+    width: 100%;
 }
 .content h3{
     font-size: 36px;
@@ -98,10 +99,6 @@ main .provided-services{
     background-size: cover;
     padding-bottom: 10px;
 }
-p{
-    max-width: 450px;
-    padding-bottom: 10px;
-}
 .service-container{
     padding: 20px;
     max-width: 450px;
@@ -115,6 +112,8 @@ p{
 }
 .description{
     font-size: 18px;
+    max-width: 450px;
+    padding-bottom: 10px;
 }
 .btn {
     width: fit-content;
@@ -135,4 +134,7 @@ p{
 .btn-align{
     display: flex;
     flex-direction: row-reverse;
+}
+footer{
+    margin-top: 30px;
 }
