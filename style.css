@@ -200,6 +200,9 @@ footer {
 
   .img-contanier {
     padding-left: 0;
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
   }
 
   #first-btn {
