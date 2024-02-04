@@ -53,7 +53,7 @@ main {
 .contact-location {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 45px;
 }
 /* Mobile */
 @media all and (max-width: 500px) {
@@ -75,7 +75,7 @@ main {
 @media all and (min-width: 1025px) {
   .contact-info,
   .contact-location {
-    max-width: 600px;
+    width: 100%;
   }
 }
 /* Mobile */
@@ -129,9 +129,9 @@ main {
 /* Mobile */
 @media all and (max-width: 500px) {
   .contact-location img {
-    max-width: 500px;
+    /* max-width: 500px;
     height: 150px;
-    margin: 0 auto;
+    margin: 0 auto; */
   }
 }
 /* Tablet */
@@ -145,8 +145,8 @@ main {
 /* Web */
 @media all and (min-width: 1025px) {
   .contact-location img {
-    max-width: 500px;
-    height: 350px;
+    width: auto;
+    height: auto;
   }
 }
 .contact-adress {
