@@ -67,7 +67,7 @@ main {
 @media all and (min-width: 501px) and (max-width: 1024px) {
   .contact-info,
   .contact-location {
-    max-width: 700px;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -137,8 +137,8 @@ main {
 /* Tablet */
 @media all and (min-width: 501px) and (max-width: 1024px) {
   .contact-location img {
-    max-width: 500px;
-    height: 340px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
   }
 }
