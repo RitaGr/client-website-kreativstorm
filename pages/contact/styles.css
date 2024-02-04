@@ -41,7 +41,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 30px;
+    gap: 100px;
     padding: 50px;
   }
 }
@@ -129,9 +129,9 @@ main {
 /* Mobile */
 @media all and (max-width: 500px) {
   .contact-location img {
-    /* max-width: 500px;
+    max-width: 500px;
     height: 150px;
-    margin: 0 auto; */
+    margin: 0 auto;
   }
 }
 /* Tablet */
